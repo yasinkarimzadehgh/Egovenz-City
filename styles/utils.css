@@ -1,0 +1,15 @@
+/* BUTTON */
+.btn-primary {
+  background-color: #c1282a;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 27px;
+}
+.btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 27px;
+}

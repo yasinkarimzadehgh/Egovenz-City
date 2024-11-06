@@ -1,0 +1,233 @@
+/* fonts */
+
+@font-face {
+  font-family: "Poppins regular";
+  src: url("../fonts/poppins/poppins-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins bold";
+  src: url("../fonts/poppins/poppins-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins normal";
+  src: url("../fonts/poppins/poppins-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins regular", sans-serif;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Header Top Section */
+.header-top {
+  font-size: 13px;
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Header Section */
+
+.logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.rounded-container {
+  border-radius: 20px;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  font-size: 0.9rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  /* md breakpoint in Bootstrap */
+  .rounded-container {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 1200px) {
+  /* md breakpoint in Bootstrap */
+  .search-box {
+    margin-top: 20px;
+  }
+}
+
+.search-icon {
+  color: #333;
+  font-size: 1.2rem;
+  margin-left: 15rem;
+}
+@media (max-width: 1200px) {
+  /* md breakpoint in Bootstrap */
+  .search-icon {
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 992px) {
+  /* md breakpoint in Bootstrap */
+  .search-icon {
+    margin-left: 0;
+  }
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Navbar Section */
+
+.navbar {
+  font-family: "Poppins normal";
+  background-color: #c1282a;
+}
+
+.nav-link {
+  --bs-text-opacity: 1;
+  color: #ffffff !important;
+  margin-right: 30px;
+  padding: 0 !important;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Slider */
+
+.slide1,
+.slide2 {
+  min-height: 100vh; /* Ensures the slides are the full viewport height */
+  display: flex;
+  align-items: center; /* Centers the content vertically */
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/memphis-1.jpg);
+  background-position: center !important;
+  background-size: cover;
+}
+
+.slider-title {
+  color: #c1282a;
+  font-weight: bold;
+}
+
+.slider-text1 {
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Poppins bold";
+}
+
+@media (max-width: 992px) {
+  /* md breakpoint in Bootstrap */
+  .slider-text1 {
+    font-size: 20px;
+  }
+}
+
+.slider-text2 {
+  line-height: 30px;
+  color: #333;
+}
+
+.slide1 button,
+.slide2 button {
+  background-color: #c1282a;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 27px;
+}
+
+/* OWL CAROUSEL */
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  background-color: #d3caca6e !important;
+  font-size: 40px !important;
+}
+
+.owl-prev {
+  left: 20px;
+}
+.owl-next {
+  right: 20px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* introduce cards */
+
+.introduce-card {
+  border-top: 10px solid #c1282a !important;
+  padding: 40px;
+  top: -100px;
+  z-index: 10;
+}
+
+.introduce-card:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 1200px) {
+  .introduce-card {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .introduce-card {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    top: 0;
+  }
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 2rem !important;
+}
+
+.card-body {
+  padding: 0;
+}
+.introduce-card-title {
+  margin: 0;
+  padding: 20px 0;
+  font-weight: bold;
+}
+.introduce-card-text {
+  font-size: 0.9rem;
+}
+.introduce-card-link {
+  color: #c1282a;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
