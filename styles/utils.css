@@ -6,10 +6,18 @@
   border-radius: 5px;
   padding: 14px 27px;
 }
+.btn-primary:hover {
+  background-color: #820a0c;
+  color: #ffffff;
+}
 .btn-secondary {
   background-color: #ffffff;
   color: #000000;
   border: none;
   border-radius: 5px;
   padding: 14px 27px;
+}
+.btn-secondary:hover {
+  background-color: #f3f0f0;
+  color: #000000;
 }
