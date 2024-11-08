@@ -241,3 +241,34 @@ body {
 }
 
 /* ---------------------------------------------------------------------------- */
+
+.municipal-title {
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Poppins bold";
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.municipal-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 45px;
+  height: 3px;
+  background-color: #c1282a;
+  border-radius: 2px;
+}
+
+.municipal-title::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50px; /* Adjust to position navy dashes after the red line */
+  width: 10px; /* Width of each navy dash */
+  height: 3px;
+  background-color: navy;
+  margin-right: 5px; /* Spacing between the navy dashes */
+  box-shadow: 15px 0 0 navy; /* Creates the second dash */
+}
