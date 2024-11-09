@@ -242,15 +242,15 @@ body {
 
 /* ---------------------------------------------------------------------------- */
 
-.municipal-title {
+.municipal-leftSide__title {
   font-size: 37px;
   font-weight: bold;
   font-family: "Poppins bold";
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
-.municipal-title::after {
+.municipal-leftSide__title::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -261,14 +261,14 @@ body {
   border-radius: 2px;
 }
 
-.municipal-title::before {
+.municipal-leftSide__title::before {
   content: "";
   position: absolute;
   bottom: -5px;
-  left: 50px; /* Adjust to position navy dashes after the red line */
-  width: 10px; /* Width of each navy dash */
+  left: 50px;
+  width: 10px;
   height: 3px;
   background-color: navy;
-  margin-right: 5px; /* Spacing between the navy dashes */
-  box-shadow: 15px 0 0 navy; /* Creates the second dash */
+  margin-right: 5px;
+  box-shadow: 15px 0 0 navy;
 }
